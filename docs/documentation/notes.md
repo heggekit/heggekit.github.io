@@ -70,7 +70,7 @@ SET-WinSystemLocale
 - Taskkill /PID XXXX /F
 - https://download.sysinternals.com/files/ProcessExplorer.zip
 
-# Missing switch user windows 10 - 1 disabled, 0 on
+# Missing switch user windows 10 - 1 disabled, 0 on POLICY: Hide entry points for Fast User Switching - https://admx.help/?Category=Windows_10_2016&Policy=Microsoft.Policies.WindowsLogon::HideFastUserSwitching
 reg add "HKEY_USERS\S-1-5-21-xxxxxxxx\Software\Microsoft\Windows\CurrentVersion\Policies\System" /v HideFastUserSwitching /t REG_DWORD /d 0 /f
 reg delete "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System" /v HideFastUserSwitching /f
 ```
