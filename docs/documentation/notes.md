@@ -260,6 +260,11 @@ cmd /c 'C:\Packages\BT2019_R9_156128_Full_x64.exe FEATURE=BarTender PKC=xxxx-xxx
 Start-Process -FilePath "C:\Packages\BT2019_R9_156128_Full_x64.exe" -ArgumentList 'FEATURE=BarTender PKC=xxxx-xxxx-xxxx-xxxx' -Wait -Verb RunAs -WindowStyle hidden
 - Removal
 cmd /c 'C:\Packages\BT2019_R9_156128_Full_x64.exe REMOVE=ALL'
+
+# Silent install of DYMO LabelWriter
+- Needs to be ran as administrator after install to add printer
+cmd /c 'C:\Packages\DLS8Setup.8.5.4.exe' /S
+cmd /c 'C:\Program Files (x86)\DYMO\DYMO Label Software\Uninstall DYMO Label.exe' /S
 ```
 
 ## UnInstalls:
