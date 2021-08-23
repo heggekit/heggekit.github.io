@@ -266,6 +266,9 @@ cmd /c 'C:\Packages\BT2019_R9_156128_Full_x64.exe REMOVE=ALL'
 - If printer drivers only is needed then use: cmd /c 'C:\Packages\DLS8Setup.8.5.4.exe' /S /p
 cmd /c 'C:\Packages\DLS8Setup.8.5.4.exe' /S
 cmd /c 'C:\Program Files (x86)\DYMO\DYMO Label Software\Uninstall DYMO Label.exe' /S
+
+# Silent install of Amazon Workspaces
+cmd /c 'C:\Packages\Amazon+WorkSpaces.msi' ALLUSERS=1 /qn
 ```
 
 ## UnInstalls:
